@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Nginep Yuk!</string>
+    <string name="nama_hotel">Nama Hotel</string>
+    <string name="id_hotel">ID Hotel</string>
+    <string name="alamat_hotel">Berikut adalah informasi lengkap</string>
+    <string name="koordinat">Berikut adalah informasi lengkap</string>
+    <string name="no_telp">Berikut adalah informasi lengkap</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_label1">Home</string>
+    <string name="tab_label2">About NginepYuk</string>
+</resources>
