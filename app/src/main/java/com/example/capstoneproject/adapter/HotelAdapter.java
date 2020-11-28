@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.capstoneproject.MainActivity;
 import com.example.capstoneproject.R;
 import com.example.capstoneproject.model.HotelItem;
 
@@ -24,6 +25,11 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
     public HotelAdapter(ArrayList<HotelItem> hotelItems, Context context) {
         this.hotelItems = hotelItems;
         this.context = context;
+    }
+
+    public void setData(ArrayList<HotelItem> data){
+        this.hotelItems = data;
+        notifyDataSetChanged();
     }
 
     @NonNull
