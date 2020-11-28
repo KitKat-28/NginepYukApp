@@ -100,4 +100,8 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="alamat">Alamat hotel</string>
+    <string name="kor">Kordinat</string>
+    <string name="kord">No Telepon</string>
+    <string name="terserah">terserah</string>
 </resources>

@@ -28,7 +28,7 @@ public class DetailActivity extends AppCompatActivity {
         CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         toolBarLayout.setTitle(getTitle());
 
-        toolbar.setTitle(getIntent().getStringExtra("title"));
+        toolBarLayout.setTitle(getIntent().getStringExtra("title"));
         alamatHotel.setText(getIntent().getStringExtra("alamat_hotel"));
         koordinat.setText(getIntent().getStringExtra("koordinat"));
         noTelp.setText(getIntent().getStringExtra("no_telp"));

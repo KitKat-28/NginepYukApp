@@ -49,11 +49,11 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
                 .into(holder.sportsImage);//menampilkan gambar
 
 
-        holder.title.setText(hotelItems.get(position).getNama());
-        holder.idHotel.setText(Integer.toString(hotelItems.get(position).getId()));
-        holder.alamatHotel.setText(hotelItems.get(position).getAlamat());
-        holder.koordinat.setText(hotelItems.get(position).getKordinat());
-        holder.noTelp.setText(hotelItems.get(position).getNomorTelp());
+          holder.title.setText(hotelItems.get(position).getNama());
+//        holder.idHotel.setText(Integer.toString(hotelItems.get(position).getId()));
+//        holder.alamatHotel.setText(hotelItems.get(position).getAlamat());
+//        holder.koordinat.setText(hotelItems.get(position).getKordinat());
+//        holder.noTelp.setText(hotelItems.get(position).getNomorTelp());
         holder.cvKlik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

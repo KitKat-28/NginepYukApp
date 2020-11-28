@@ -42,30 +42,30 @@
                 android:padding="8dp"
                 android:text="@string/id_hotel"/>
 
-            <TextView
-                android:id="@+id/alamat_hotel"
-                style="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/id_hotel"
-                android:padding="8dp"
-                android:text="@string/alamat_hotel"/>
-            <TextView
-                android:id="@+id/koordinat"
-                style="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/alamat_hotel"
-                android:padding="8dp"
-                android:text="@string/koordinat"/>
-            <TextView
-                android:id="@+id/no_telp"
-                style="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/koordinat"
-                android:padding="8dp"
-                android:text="@string/no_telp" />
+<!--            <TextView-->
+<!--                android:id="@+id/alamat_hotel"-->
+<!--                style="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/id_hotel"-->
+<!--                android:padding="8dp"-->
+<!--                android:text="@string/alamat_hotel"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/koordinat"-->
+<!--                style="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/alamat_hotel"-->
+<!--                android:padding="8dp"-->
+<!--                android:text="@string/koordinat"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/no_telp"-->
+<!--                style="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/koordinat"-->
+<!--                android:padding="8dp"-->
+<!--                android:text="@string/no_telp" />-->
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
