@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_klik"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp">
@@ -28,7 +29,8 @@
                 android:padding="8dp"
                 android:layout_alignBottom="@id/sportsImage"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
-                android:text="@string/nama_hotel" />
+                android:text="@string/nama_hotel"/>
+
 
             <TextView
                 android:id="@+id/id_hotel"
@@ -38,7 +40,7 @@
                 android:layout_below="@id/sportsImage"
                 android:textColor="?android:textColorSecondary"
                 android:padding="8dp"
-                android:text="@string/id_hotel" />
+                android:text="@string/id_hotel"/>
 
             <TextView
                 android:id="@+id/alamat_hotel"
@@ -47,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/id_hotel"
                 android:padding="8dp"
-                android:text="@string/alamat_hotel" />
+                android:text="@string/alamat_hotel"/>
             <TextView
                 android:id="@+id/koordinat"
                 style="@style/TextAppearance.AppCompat.Subhead"
@@ -55,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/alamat_hotel"
                 android:padding="8dp"
-                android:text="@string/koordinat" />
+                android:text="@string/koordinat"/>
             <TextView
                 android:id="@+id/no_telp"
                 style="@style/TextAppearance.AppCompat.Subhead"
