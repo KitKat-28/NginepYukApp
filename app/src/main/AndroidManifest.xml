@@ -18,6 +18,10 @@
             android:theme="@style/Theme.CapstoneProject.NoActionBar"></activity>
         <activity android:name=".FormPemesanan"></activity>
         <activity
+            android:name=".IntroActivity"
+            android:label="My Custom AppIntro"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -26,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".InfoActivity"></activity>
         <activity android:name=".MainActivity"></activity>
     </application>
 

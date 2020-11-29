@@ -4,11 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormPemesanan">
+    tools:context=".FormPemesanan"
+    android:background="#FBF0F5">
 
-<!--    <ScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -228,8 +226,25 @@
         android:textStyle="bold"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
-        android:drawableLeft="@drawable/ic_btn_pesan"/>
-<!--    </ScrollView>-->
+        android:drawableLeft="@drawable/ic_nginep"
+        android:onClick="Pesan"/>
+
+    <Button
+        android:id="@+id/btn_kembali"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_pesan"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="34dp"
+        android:background="@color/loose"
+        android:drawableLeft="@drawable/ic_home"
+        android:onClick="Kembali"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/kembali"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

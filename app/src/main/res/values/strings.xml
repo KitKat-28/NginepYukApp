@@ -33,6 +33,13 @@
     <string name="pesan">Pesan</string>
     <string name="masukkan_nama_pemesan">Masukkan Nama Pemesan</string>
     <string name="nama_pemesan"> Nama Pemesan</string>
+    <string name="toast_message">Yeay Pemesanan Kamar Berhasil !</string>
+    <string name="kembali">Home</string>
+    <string name="action_info">Info</string>
+    <string name="about_us">About Us</string>
+    <string name="nama1">Sevi Dian Nirwana</string>
+    <string name="nama2">Mella Aulia Agusty</string>
+    <string name="nama3">Sicillia Rizki Ananda</string>
 
     <string-array name="spinnerKota">
         <item>Jakarta, Indonesia</item>

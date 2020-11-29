@@ -3,10 +3,12 @@ package com.example.capstoneproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -57,5 +59,15 @@ public class FormPemesanan extends AppCompatActivity {
                 pickerDialog.show();
             }
         });
+    }
+
+    public void Pesan(View view) {
+        Toast toast = Toast.makeText(this,R.string.toast_message,Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void Kembali(View view) {
+        Intent intent = new Intent(FormPemesanan.this, MainActivity.class);
+        startActivity(intent);
     }
 }
