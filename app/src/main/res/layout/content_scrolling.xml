@@ -13,25 +13,80 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Alamat Hotel :"
+            android:id="@+id/info4"
+            android:textColor="@color/barld"
+            android:textSize="19sp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="@dimen/text_margin"
         android:text="Alamat Hotel :"
-        android:id="@+id/alamat_hotel"/>
+        android:textColor="@color/loose"
+        android:id="@+id/alamat_hotel"
+        android:textSize="19sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Kordinat Hotel :"
+            android:id="@+id/info3"
+            android:textColor="@color/barld"
+            android:textSize="19sp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:text="Kordinat Hotel :"
-        android:id="@+id/koordinat"/>
+        android:textColor="@color/loose"
+        android:id="@+id/koordinat"
+        android:textSize="19sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="No Telepon :"
+            android:id="@+id/info2"
+            android:textColor="@color/barld"
+            android:textSize="19sp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:text="No Telepon :"
-        android:id="@+id/no_telp"/>
-    </LinearLayout>
+        android:textColor="@color/loose"
+        android:id="@+id/no_telp"
+        android:textSize="19sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="All you have to know :"
+            android:id="@+id/info"
+            android:textColor="@color/barld"
+            android:textSize="19sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text"
+        android:id="@+id/large_text"
+        android:textColor="@color/barld"
+        android:textSize="17sp"/>
+
+</LinearLayout>
+
 
 </ScrollView>
