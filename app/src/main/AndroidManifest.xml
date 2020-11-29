@@ -14,21 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProject">
 
-        <receiver
-            android:name=".AlarmReceiver"
-            android:enabled="true"
-            android:exported="true"
-            tools:ignore="Instantiatable" />
-
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main2" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".InfoActivity"/>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

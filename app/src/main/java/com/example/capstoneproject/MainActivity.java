@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<HotelItem> hotelItems;
     private HotelAdapter hotelAdapter;
     private HotelViewModel mHotelViewModel;
-    public static final String EXTRA_MESSAGE =
-            "com.example.android.capstoneproject.extra.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,28 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_alarm:
-                Intent intent = new Intent(MainActivity.this,
-                        AlarmActivity.class);
-                startActivity(intent);
-                return true;
-            case R.id.action_voucer:
-                displayToast(getString(R.string.action_status_message));
-                return true;
-            default:
-                // Do nothing
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void displayToast(String message) {
-        Toast.makeText(getApplicationContext(), message,
-                Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -164,5 +140,11 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+    }
+
+    public void InfoView(MenuItem item) {
+        Intent intent = new Intent(MainActivity.this,
+                InfoActivity.class);
+        startActivity(intent);
     }
 }

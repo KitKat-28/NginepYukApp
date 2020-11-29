@@ -5,15 +5,10 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/action_alarm"
-        android:icon="@drawable/ic_alarm"
-        android:orderInCategory="20"
-        android:title="@string/alamat_hotel"
-        app:showAsAction="always"/>
-    <item
-        android:id="@+id/action_voucer"
-        android:icon="@drawable/ic_voucer"
-        android:orderInCategory="30"
-        android:title="@string/title_voucer"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/action_order"
+        android:icon="@drawable/ic_info"
+        android:orderInCategory="10"
+        android:title="@string/action_info"
+        app:showAsAction="always"
+        android:onClick="InfoView"/>
 </menu>
