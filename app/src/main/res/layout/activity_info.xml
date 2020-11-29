@@ -27,7 +27,7 @@
      android:rotation="-8"
      android:rotationX="-22"
      android:rotationY="-324"
-     android:text="ABOUT ME!"
+     android:text="@string/about_our"
      android:textColor="@color/black"
      android:textSize="30sp"
      android:textStyle="bold"
