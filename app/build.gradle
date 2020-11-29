@@ -65,4 +65,5 @@ dependencies {
 
     implementation "android.arch.lifecycle:extensions:2.2.0"
     annotationProcessor "android.arch.lifecycle:compiler:2.2.0"
+    implementation 'androidx.core:core:1.3.0'
 }

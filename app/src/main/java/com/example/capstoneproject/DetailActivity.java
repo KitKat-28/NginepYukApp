@@ -1,6 +1,8 @@
 package com.example.capstoneproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,5 +46,10 @@ public class DetailActivity extends AppCompatActivity {
         alamatHotel = findViewById(R.id.alamat_hotel);
         koordinat = findViewById(R.id.koordinat);
         noTelp = findViewById(R.id.no_telp);
+    }
+
+    public void pindah(View view) {
+        Intent intent = new Intent(DetailActivity.this, FormPemesanan.class);
+        startActivity(intent);
     }
 }
