@@ -1,8 +1,12 @@
 package com.example.capstoneproject;
 
+import android.app.NotificationManager;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -10,7 +14,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,7 +22,6 @@ import com.example.capstoneproject.model.HotelItem;
 import com.example.capstoneproject.model.RootHotelModel;
 import com.example.capstoneproject.rest.ApiConfig;
 import com.example.capstoneproject.rest.ApiService;
-import com.example.capstoneproject.room.HotelDAO;
 import com.example.capstoneproject.room.HotelViewModel;
 
 import java.util.ArrayList;
@@ -29,12 +31,16 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView hotel;
     private ArrayList<HotelItem> hotelItems;
     private HotelAdapter hotelAdapter;
     private HotelViewModel mHotelViewModel;
+    public static final String EXTRA_MESSAGE =
+            "com.example.android.capstoneproject.extra.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         // Create an instance of the tab layout from the view.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         initView();
         hotelItems = new ArrayList<>();
         if (haveNetwork()) {
@@ -58,10 +65,36 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_alarm:
+                Intent intent = new Intent(MainActivity.this,
+                        AlarmActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_voucer:
+                displayToast(getString(R.string.action_status_message));
+                return true;
+            default:
+                // Do nothing
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
+    public void displayToast(String message) {
+        Toast.makeText(getApplicationContext(), message,
+                Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
     private boolean haveNetwork() {
         boolean have_WIFI = false;
@@ -123,7 +156,6 @@ public class MainActivity extends AppCompatActivity {
                             hotel.setAdapter(hotelAdapter); //recycler view menghubungkan ke adapter dengan "SET ADAPTER"
                             hotel.setLayoutManager(new LinearLayoutManager(getApplicationContext())); //recycler view dapat berubah layoutnya bisa berubah grid maupun stargredd
                         }
-
                     }
 
                     @Override
@@ -133,7 +165,4 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
-
-
 }

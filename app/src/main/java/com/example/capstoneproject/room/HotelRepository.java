@@ -13,13 +13,13 @@ public class HotelRepository {
     private HotelDAO mHotelDAO;
     private LiveData<List<HotelItem>> mHotelItems;
 
-    HotelRepository(Application application){
+    public HotelRepository(Application application){
         HotelRoomDatabase db = HotelRoomDatabase.getDatabase(application);
         mHotelDAO = db.hotelDAO();
         mHotelItems = mHotelDAO.getAllData();
     }
 
-    LiveData<List<HotelItem>> getAllData() {
+    public LiveData<List<HotelItem>> getAllData() {
 
         return mHotelItems;
     }
