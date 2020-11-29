@@ -9,4 +9,51 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tab_label1">Home</string>
     <string name="tab_label2">About NginepYuk</string>
+
+    <string name="Asal_Kota">Kota Asal</string>
+    <string name="check_in">Check-in</string>
+    <string name="durasi_penginapan">Durasi Penginapan</string>
+    <string name="check_out">Check-Out</string>
+    <string name="pilih_tanggal_check_in">Pilih Tanggal Check-In</string>
+    <string name="pilih_tanggal_check_out">Pilih Tanggal Check-Out</string>
+    <string name="tamu_dan_jumlah_kamar">Tamu dan Jumlah Kamar</string>
+    <string name="jenis_kamar">Jenis Kamar</string>
+    <string name="pesan">Pesan</string>
+    <string name="masukkan_nama_pemesan">Masukkan Nama Pemesan</string>
+    <string name="nama_pemesan"> Nama Pemesan</string>
+
+    <string-array name="spinnerKota">
+        <item>Jakarta, Indonesia</item>
+        <item>Yogyakarta, Indonesia</item>
+        <item>Palembang, Indonesia</item>
+        <item>Singapura, Singapura</item>
+        <item>Kuala Lumpur, Malaysia</item>
+        <item>Tokyo, Jepang</item>
+        <item>Seoul, Korea Selatan</item>
+    </string-array>
+
+    <string-array name="spinnerDurasi">
+        <item>1 Malam</item>
+        <item>2 Malam</item>
+        <item>3 Malam</item>
+        <item>4 Malam</item>
+        <item>5 Malam</item>
+    </string-array>
+
+    <string-array name="spinnerTamu">
+        <item>1 Dewasa, 0 Anak-anak, 1 Kamar</item>
+        <item>2 Dewasa, 0 Anak-anak, 1 Kamar</item>
+        <item>2 Dewasa, , 0 Anak-anak, 2 Kamar</item>
+    </string-array>
+
+    <string-array name="spinnerJenisKamar">
+        <item>Standard Room</item>
+        <item>Superior Room</item>
+        <item>Deluxe Room</item>
+        <item>Junior Suite Room</item>
+        <item>Suite Room</item>
+        <item>Presidential Suite</item>
+        <item>Single Room</item>
+        <item>Twin Room</item>
+    </string-array>
 </resources>
