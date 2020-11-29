@@ -2,8 +2,13 @@
 CapstoneProject
 Aplikasi Daftar Hotel dan beberapa fitur lainnya
 
-KITKAT-28 FOR CAPSTONE PROJECT \n
-**SEVI DIAN BERKONTRIBUSI DALAM COMMIT BRANCH** \n
+KITKAT-28 FOR CAPSTONE PROJECT 
+
+
+**SEVI DIAN BERKONTRIBUSI DALAM COMMIT BRANCH** 
+
+
+
 Leader :
 1. Sevi Dian Nirwana( Sistem Informasi Regular A 2018 )
 Members:
