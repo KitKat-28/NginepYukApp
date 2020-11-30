@@ -4,8 +4,9 @@ Aplikasi Daftar Hotel dan beberapa fitur lainnya
 
 KITKAT-28 FOR CAPSTONE PROJECT 
 
+**Project Yang Fix ada di branch master**
 
-**SEVI DIAN BERKONTRIBUSI DALAM COMMIT BRANCH** 
+**SEVI DIAN BERKONTRIBUSI DALAM BRANCH** 
 
 
 
